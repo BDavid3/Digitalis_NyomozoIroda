@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Digitalis_NyomozoIroda
 {
-	internal class ÜgyÁllapot
+	internal class Gyanusított
 	{
-		private bool statusz;
+		private Gyanusított Person;
+		private int gyanusitottsagszint;
+		private string statusz;
 	}
 }
