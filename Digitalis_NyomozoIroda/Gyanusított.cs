@@ -8,7 +8,7 @@ namespace Digitalis_NyomozoIroda
 {
 	internal class Gyanusított
 	{
-		private Gyanusított Person;
+		private Személy Person;
 		private int gyanusitottsagszint;
 		private string statusz;
 	}

@@ -8,7 +8,7 @@ namespace Digitalis_NyomozoIroda
 {
 	internal class Tanú
 	{
-		private Tanú Person;
+		private Személy Person;
 		private string vallomas;
 		private int vallomasdatum;
 	}
