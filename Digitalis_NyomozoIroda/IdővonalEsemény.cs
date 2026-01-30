@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Digitalis_NyomozoIroda
 {
-	internal class Tanú
+	internal class IdővonalEsemény
 	{
-		private Személy Person;
-		private string vallomas;
-		private DateOnly vallomasdatum;
+		private DateOnly datum;
+		private string esemenyleiras;
 	}
 }
