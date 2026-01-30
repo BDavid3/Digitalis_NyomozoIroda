@@ -19,5 +19,10 @@ namespace Digitalis_NyomozoIroda
 
 		public DateOnly Datum { get => datum; set => datum = value; }
 		public string Esemenyleiras { get => esemenyleiras; set => esemenyleiras = value; }
+
+		public override string ToString()
+		{
+			return $"---------Az ügy idővonalának egy eseménye:---------\n\tDátum: {this.datum}\n\tEsemény leírása: {this.esemenyleiras}";
+		}
 	}
 }

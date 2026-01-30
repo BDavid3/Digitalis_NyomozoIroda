@@ -16,5 +16,10 @@ namespace Digitalis_NyomozoIroda
 		}
 
 		public bool Statusz { get => statusz; set => statusz = value; }
+
+		public override string ToString()
+		{
+			return $"Ügy állapota: {this.statusz}";
+		}
 	}
 }

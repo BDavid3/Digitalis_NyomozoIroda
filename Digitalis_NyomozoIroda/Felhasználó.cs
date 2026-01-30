@@ -23,5 +23,10 @@ namespace Digitalis_NyomozoIroda
 		public string Nev { get => nev; set => nev = value; }
 		public string Azonosito { get => azonosito; set => azonosito = value; }
 		public string Szerepkor { get => szerepkor; set => szerepkor = value; }
+
+		public override string ToString()
+		{
+			return $"--------Renszer Felhasználó--------\n\tNév: {this.nev}\n\tAzonosító: {this.azonosito}\n\tSzerepköt: {this.szerepkor}";
+		}
 	}
 }

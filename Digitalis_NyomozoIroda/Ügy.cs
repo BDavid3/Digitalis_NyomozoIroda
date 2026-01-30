@@ -31,5 +31,10 @@ namespace Digitalis_NyomozoIroda
 		public string Allapot { get => allapot; set => allapot = value; }
 		internal List<Ügy> Szemelyek { get => szemelyek; set => szemelyek = value; }
 		internal List<Ügy> Bizonyitekok { get => bizonyitekok; set => bizonyitekok = value; }
+
+		public override string ToString()
+		{
+			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n\t Hozzá tartozó személyek listája: {this.szemelyek}\n\t Hozzá tartozó bizonyítékok listája: {this.bizonyitekok}";
+		}
 	}
 }
