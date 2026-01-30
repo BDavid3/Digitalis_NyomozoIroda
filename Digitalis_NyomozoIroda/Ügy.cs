@@ -36,14 +36,11 @@ namespace Digitalis_NyomozoIroda
 		{
 			szemelyek.Add(sz);
 		}
-		/*public void szemelyeklekerdezese()
+
+		public void bizonyitekhozzaadas(Bizonyíték b)
 		{
-			Console.WriteLine(this.cim);
-			foreach (var item in szemelyek)
-			{
-				Console.WriteLine(item);
-			}
-		}*/
+			
+		}
 
 		public override string ToString()
 		{
