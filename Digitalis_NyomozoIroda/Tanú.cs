@@ -11,5 +11,16 @@ namespace Digitalis_NyomozoIroda
 		private Személy Person;
 		private string vallomas;
 		private DateOnly vallomasdatum;
+
+		public Tanú(Személy person, string vallomas, DateOnly vallomasdatum)
+		{
+			Person = person;
+			this.vallomas = vallomas;
+			this.vallomasdatum = vallomasdatum;
+		}
+
+		public string Vallomas { get => vallomas; set => vallomas = value; }
+		public DateOnly Vallomasdatum { get => vallomasdatum; set => vallomasdatum = value; }
+		internal Személy Person1 { get => Person; set => Person = value; }
 	}
 }

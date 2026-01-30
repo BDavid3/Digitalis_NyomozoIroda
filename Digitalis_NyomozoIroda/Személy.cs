@@ -11,5 +11,16 @@ namespace Digitalis_NyomozoIroda
 		private string nev;
 		private int eletkor;
 		private string megjegyzes;
+
+		public Személy(string nev, int eletkor, string megjegyzes)
+		{
+			this.nev = nev;
+			this.eletkor = eletkor;
+			this.megjegyzes = megjegyzes;
+		}
+
+		public string Nev { get => nev; set => nev = value; }
+		public int Eletkor { get => eletkor; set => eletkor = value; }
+		public string Megjegyzes { get => megjegyzes; set => megjegyzes = value; }
 	}
 }

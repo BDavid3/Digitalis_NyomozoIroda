@@ -10,5 +10,14 @@ namespace Digitalis_NyomozoIroda
 	{
 		private DateOnly datum;
 		private string esemenyleiras;
+
+		public IdővonalEsemény(DateOnly datum, string esemenyleiras)
+		{
+			this.datum = datum;
+			this.esemenyleiras = esemenyleiras;
+		}
+
+		public DateOnly Datum { get => datum; set => datum = value; }
+		public string Esemenyleiras { get => esemenyleiras; set => esemenyleiras = value; }
 	}
 }

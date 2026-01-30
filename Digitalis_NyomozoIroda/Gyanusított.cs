@@ -11,5 +11,16 @@ namespace Digitalis_NyomozoIroda
 		private Személy Person;
 		private int gyanusitottsagszint;
 		private string statusz;
+
+		public Gyanusított(Személy person, int gyanusitottsagszint, string statusz)
+		{
+			Person = person;
+			this.gyanusitottsagszint = gyanusitottsagszint;
+			this.statusz = statusz;
+		}
+
+		public int Gyanusitottsagszint { get => gyanusitottsagszint; set => gyanusitottsagszint = value; }
+		public string Statusz { get => statusz; set => statusz = value; }
+		internal Személy Person1 { get => Person; set => Person = value; }
 	}
 }
