@@ -12,25 +12,38 @@ namespace Digitalis_NyomozoIroda
 		private string cim;
 		private string leiras;
 		private string allapot;
-		private List<Ügy> szemelyek;
-		private List<Ügy> bizonyitekok;
+		private List<Személy> szemelyek;
+		private List<Bizonyíték> bizonyitekok;
 
-		public Ügy(string ugyazonosito, string cim, string leiras, string allapot, List<Ügy> szemelyek, List<Ügy> bizonyitekok)
+		public Ügy(string ugyazonosito, string cim, string leiras, string allapot)
 		{
 			this.ugyazonosito = ugyazonosito;
 			this.cim = cim;
 			this.leiras = leiras;
 			this.allapot = allapot;
-			this.szemelyek = szemelyek;
-			this.bizonyitekok = bizonyitekok;
+			this.szemelyek = new List<Személy>();
+			this.bizonyitekok = new List<Bizonyíték>();
 		}
 
 		public string Ugyazonosito { get => ugyazonosito; set => ugyazonosito = value; }
 		public string Cim { get => cim; set => cim = value; }
 		public string Leiras { get => leiras; set => leiras = value; }
 		public string Allapot { get => allapot; set => allapot = value; }
-		internal List<Ügy> Szemelyek { get => szemelyek; set => szemelyek = value; }
-		internal List<Ügy> Bizonyitekok { get => bizonyitekok; set => bizonyitekok = value; }
+		internal List<Személy> Szemelyek { get => szemelyek; set => szemelyek = value; }
+		internal List<Bizonyíték> Bizonyitekok { get => bizonyitekok; set => bizonyitekok = value; }
+
+		public void szemelyhozzaadas(Személy sz)
+		{
+			szemelyek.Add(sz);
+		}
+		/*public void szemelyeklekerdezese()
+		{
+			Console.WriteLine(this.cim);
+			foreach (var item in szemelyek)
+			{
+				Console.WriteLine(item);
+			}
+		}*/
 
 		public override string ToString()
 		{
