@@ -26,7 +26,7 @@ namespace Digitalis_NyomozoIroda
 
 		public override string ToString()
 		{
-			return $"--------Renszer Felhasználó--------\n\tNév: {this.nev}\n\tAzonosító: {this.azonosito}\n\tSzerepköt: {this.szerepkor}";
+			return $"--------Renszer Felhasználó:--------\n\tNév: {this.nev}\n\tAzonosító: {this.azonosito}\n\tSzerepkör: {this.szerepkor}";
 		}
 	}
 }
