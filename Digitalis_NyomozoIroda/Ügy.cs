@@ -39,7 +39,7 @@ namespace Digitalis_NyomozoIroda
 
 		public void bizonyitekhozzaadas(Bizonyíték b)
 		{
-			
+			bizonyitekok.Add(b);
 		}
 
 		public override string ToString()
