@@ -64,7 +64,7 @@ namespace Digitalis_NyomozoIroda
 
 		public override string ToString()
 		{
-			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n------Hozzá tartozó személyek listája:------\n\t {szemelyekkiiratas()}\n------Hozzá tartozó bizonyítékok listája:------\n\t{this.bizonyitekkiiras()}";
+			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n------Hozzá tartozó személyek listája:------\n\t {this.szemelyekkiiratas()}\n------Hozzá tartozó bizonyítékok listája:------\n\t{this.bizonyitekkiiras()}";
 		}
 	}
 }

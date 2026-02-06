@@ -22,5 +22,10 @@ namespace Digitalis_NyomozoIroda
 		public int Gyanusitottsagszint { get => gyanusitottsagszint; set => gyanusitottsagszint = value; }
 		public string Statusz { get => statusz; set => statusz = value; }
 		internal Személy Person1 { get => Person; set => Person = value; }
+		public override string ToString()
+		{
+			return $"----------Gyanúsított személyek:----------\n\t{this.Person}\n\tGyanúsítottsági szint: {this.gyanusitottsagszint}\n\tStátusz: {this.statusz}";
+		}
 	}
+
 }
