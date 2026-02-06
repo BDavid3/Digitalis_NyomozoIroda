@@ -15,11 +15,13 @@
 			boltibünügy.szemelyhozzaadas(sz2);
 			boltibünügy.bizonyitekhozzaadas(b1);
 			boltibünügy.bizonyitekhozzaadas(b2);
+			Tanú t1 = new Tanú(sz3, "A rablás során egy bokor mögött megbújva, szemtanúja voltam az egész büncselekménynek. A telefonommal rögzítettem az egészet", 2026, 02, 14);
+			Gyanusított gy1 = new Gyanusított(sz2, 90, "megfigyelt");
+			IdővonalEsemény i1 = new IdővonalEsemény(2026,02,12,"Bolt körüli szokatlan viselkedések");
 			Console.WriteLine(boltibünügy);
-			Gyanusított gy1 = new Gyanusított(sz2,90,"megfigyelt");
-			Tanú t1 = new Tanú(sz3, "A rablás során egy bokor mögött megbújva, szemtanúja voltam az egész büncselekménynek. A telefonommal rögzítettem az egészet",2026,02,14);
 			Console.WriteLine(gy1);
 			Console.WriteLine(t1);
+			Console.WriteLine(i1);
 		}
     }
 }
