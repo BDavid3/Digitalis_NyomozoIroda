@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -42,9 +43,28 @@ namespace Digitalis_NyomozoIroda
 			bizonyitekok.Add(b);
 		}
 
+		public string szemelyekkiiratas()
+		{
+			string s = "";
+			foreach (var sz in szemelyek)
+			{
+				s += sz + "\n\t";
+			}
+			return s;
+		}
+		public string bizonyitekkiiras()
+		{
+			string b = "";
+			foreach (var bi in bizonyitekok)
+			{
+				b += bi + "\n\t";
+			}
+			return b;
+		}
+
 		public override string ToString()
 		{
-			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n\t Hozzá tartozó személyek listája: {this.szemelyek}\n\t Hozzá tartozó bizonyítékok listája: {this.bizonyitekok}";
+			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n------Hozzá tartozó személyek listája:------\n\t {szemelyekkiiratas()}\n------Hozzá tartozó bizonyítékok listája:------\n\t{this.bizonyitekkiiras()}";
 		}
 	}
 }

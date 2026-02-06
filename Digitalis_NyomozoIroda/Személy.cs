@@ -26,7 +26,7 @@ namespace Digitalis_NyomozoIroda
 
 		public override string ToString()
 		{
-			return $"-----------Egy személy leírása:-----------\n\tNév: {this.nev}\n\tÉletkor: {this.eletkor}\n\tMegjegyzés: {this.megjegyzes}";
+			return $"-----Személy:-----\n\tNév: {this.nev}\n\tÉletkor: {this.eletkor}\n\tMegjegyzés: {this.megjegyzes}";
 		}
 	}
 }

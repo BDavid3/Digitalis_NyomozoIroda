@@ -14,6 +14,7 @@
 			boltibünügy.szemelyhozzaadas(sz2);
 			boltibünügy.bizonyitekhozzaadas(b1);
 			boltibünügy.bizonyitekhozzaadas(b2);
+			Console.WriteLine(boltibünügy);
 		}
     }
 }
