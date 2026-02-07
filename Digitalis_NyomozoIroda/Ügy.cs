@@ -52,7 +52,7 @@ namespace Digitalis_NyomozoIroda
 			string s = "";
 			foreach (var sz in szemelyek)
 			{
-				s += sz + "\n\t";
+				s += sz;
 			}
 			return s;
 		}
@@ -61,14 +61,14 @@ namespace Digitalis_NyomozoIroda
 			string b = "";
 			foreach (var bi in bizonyitekok)
 			{
-				b += bi + "\n\t";
+				b += bi;
 			}
 			return b;
 		}
 
 		public override string ToString()
 		{
-			return $"--------Konkrét bűnügy:--------\n\tÜgy azonosítója: {this.ugyazonosito}\n\tCím: {this.cim}\n\tLeírás: {this.cim}\n\tÁllapot: {this.allapot}\n------Hozzá tartozó személyek listája:------\n\t {this.szemelyekkiiratas()}\n------Hozzá tartozó bizonyítékok listája:------\n\t{this.bizonyitekkiiras()}";
+			return $"Ügy azonosító: {this.ugyazonosito}\nCím: {this.cim}\nLeírás: {this.leiras}\nÁllapot: {this.allapot}\n\nHozzá tartozó személyek: {szemelyekkiiratas()}\nHozzá tartozó bizonyítékok: {bizonyitekkiiras()}";
 		}
 	}
 }

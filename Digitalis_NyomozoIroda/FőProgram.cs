@@ -13,11 +13,59 @@ namespace Digitalis_NyomozoIroda
 	{
 		public static void Main(string[] args)
 		{
-			string bekeres;
-			Console.Write($"1. Ügyek kezelése\n2. Személyek kezelése\n3. Bizonyítékok kezelése\n4. Idővonal megtekintése\n5. Elemzés/döntések\n6. Kilépés\n\n" +
-				$"Adjon meg egy számot a felsoroltak közül: ");
-			bekeres = Console.ReadLine();
-			if (bekeres == "1")
+			bool runningMain = true;
+            string mainInput;
+			ÜgyKezelő ugyKezelő = new ÜgyKezelő();
+
+            while (runningMain)
+			{
+                // FŐMENÜ
+                Console.WriteLine("\n╔══════════════════════════════════╗");
+                Console.WriteLine("║   DIGITÁLIS NYOMOZÓ IRODA        ║");
+                Console.WriteLine("╚══════════════════════════════════╝");
+                Console.WriteLine("1. Ügyek kezelése");
+                Console.WriteLine("2. Személyek kezelése");
+                Console.WriteLine("3. Bizonyítékok kezelése");
+                Console.WriteLine("4. Idővonal megtekintése");
+                Console.WriteLine("5. Elemzés/döntések");
+                Console.WriteLine("6. Kilépés");
+                Console.Write("\nVálasszon (1-6): ");
+
+                mainInput = Console.ReadLine();
+				switch (mainInput)
+				{
+					case "1":
+						
+						bool runningUgy = true;
+						while (runningUgy)
+						{
+                            Console.WriteLine($"\n--- ÜGYEK KEZELÉSE ---");
+                            Console.WriteLine("1. Új ügy létrehozása");
+                            Console.WriteLine("2. Ügyek listázása");
+                            Console.WriteLine("3. Vissza a főmenübe");
+                            Console.Write("\nVálasszon (1-3): ");
+
+                            string ugyInput = Console.ReadLine();
+
+                            switch (ugyInput)
+                            {
+                                case "1":
+                                    ugyKezelő.ujUgyLetrehozas();
+                                    break;
+                                case "2":
+                                    ugyKezelő.ugyekListazasa();
+                                    break;
+                                case "3":
+									runningUgy = false;
+                                    break;
+                            }
+                        }
+						break;
+                }
+            }
+
+			
+			/*if (bekeres == "1")
 			{
 				Console.WriteLine("Az ügyek kezelését választotta:\n");
 				string ugy;
@@ -105,7 +153,7 @@ namespace Digitalis_NyomozoIroda
 			{
 				Console.WriteLine("Rossz értéket adtál meg!\n");
 				Main(args);
-			}
+			}*/
 			Felhasználó elemző = new Felhasználó("Bendős Dávid", "IEA38234", "elemző");
 			Személy artatlan = new Személy("Bekre Pál", 28, "Fekete rövid haj, kb: 190cm, fehér bőrű férfi");
 			Személy gyanusitott = new Személy("Lakatos Márió", 20, "kopasz, kb: 175cm, barna bőrű férfi");

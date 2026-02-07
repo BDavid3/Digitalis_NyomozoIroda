@@ -29,7 +29,7 @@ namespace Digitalis_NyomozoIroda
 
 		public override string ToString()
 		{
-			return $"-----Bizonyíték:-----\n\tAzonosító: {this.azonosito}\n\tTípus: {this.tipus}\n\tLeírás: {this.leiras}\n\tMegbizhatósági Érték: {this.megbizhatosag}";
+			return $"\nAzonosító: {this.azonosito} Típus: {this.tipus} Leírás: {this.leiras} Megbízhatóság: {this.megbizhatosag}";
 		}
 	}
 }
