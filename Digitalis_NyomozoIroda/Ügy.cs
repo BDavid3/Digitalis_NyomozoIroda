@@ -33,10 +33,6 @@ namespace Digitalis_NyomozoIroda
 		internal List<Személy> Szemelyek { get => szemelyek; set => szemelyek = value; }
 		internal List<Bizonyíték> Bizonyitekok { get => bizonyitekok; set => bizonyitekok = value; }
 
-		public void ujugy()
-		{
-			
-		}
 		public void szemelyhozzaadas(Személy sz)
 		{
 			szemelyek.Add(sz);

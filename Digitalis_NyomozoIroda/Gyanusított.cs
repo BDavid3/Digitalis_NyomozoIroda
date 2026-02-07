@@ -24,7 +24,7 @@ namespace Digitalis_NyomozoIroda
 		internal Személy Person1 { get => Person; set => Person = value; }
 		public override string ToString()
 		{
-			return $"----------Gyanúsított személyek:----------\n\t{this.Person}\n\tGyanúsítottsági szint: {this.gyanusitottsagszint}\n\tStátusz: {this.statusz}";
+			return $"--- Gyanusított ---{this.Person}Gyanúsítottsági szint: {this.gyanusitottsagszint} Státusz: {this.statusz}";
 		}
 	}
 

@@ -16,6 +16,7 @@ namespace Digitalis_NyomozoIroda
 			bool runningMain = true;
             string mainInput;
 			ÜgyKezelő ugyKezelő = new ÜgyKezelő();
+			SzemélyKezelő szemelyKezelő = new SzemélyKezelő();
 
             while (runningMain)
 			{
@@ -61,6 +62,29 @@ namespace Digitalis_NyomozoIroda
                             }
                         }
 						break;
+					case "2":
+
+						bool runningszemelyek = true;
+						while (runningszemelyek)
+						{
+                            Console.WriteLine($"\n--- SZEMÉLYEK KEZELÉSE ---");
+                            Console.WriteLine("1.Személy hozzáadása egy ügyhöz");
+                            Console.WriteLine("2. Vissza a főmenübe");
+                            Console.Write("\nVálasszon (1-2): ");
+
+							string szemelyInput = Console.ReadLine();
+
+							switch (szemelyInput)
+							{
+								case "1":
+									szemelyKezelő.szemelyHozzaAdas(ugyKezelő);
+                                    break;
+								case "2":
+									runningszemelyek = false;
+                                    break;
+                            }
+                        }
+                            break;
                 }
             }
 

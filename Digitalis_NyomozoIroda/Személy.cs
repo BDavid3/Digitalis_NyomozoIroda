@@ -23,10 +23,9 @@ namespace Digitalis_NyomozoIroda
 		public int Eletkor { get => eletkor; set => eletkor = value; }
 		public string Megjegyzes { get => megjegyzes; set => megjegyzes = value; }
 
-
 		public override string ToString()
 		{
-			return $"\nNév: {this.nev} Életkor: {this.eletkor} Megjegyzés: {this.megjegyzes}";
+			return $"\nNév: {this.nev} Életkor: {this.eletkor} Megjegyzés: {this.megjegyzes} ";
 		}
 	}
 }

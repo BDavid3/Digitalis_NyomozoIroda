@@ -30,7 +30,7 @@ namespace Digitalis_NyomozoIroda
 
 		public override string ToString()
 		{
-			return $"--------------Tanú:--------------\n\t{this.Person}\n\tVallomás szövege: {this.vallomas}\n\t Vallomás dátuma:{this.year}/{this.month}/{this.day}";
+			return $"--- Tanú ---\n{this.Person}Vallomás szövege: {this.vallomas} Vallomás dátuma:{this.year}/{this.month}/{this.day}";
 		}
 	}
 }
