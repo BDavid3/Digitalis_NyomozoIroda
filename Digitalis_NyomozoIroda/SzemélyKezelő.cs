@@ -8,7 +8,7 @@ namespace Digitalis_NyomozoIroda
 {
     internal class SzemélyKezelő
     {
-        List<Személy> személyek;
+        private List<Személy> személyek;
 
         public SzemélyKezelő()
         {
