@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Digitalis_NyomozoIroda
 {
-	internal class Gyanusított
-	{
-		private Személy Person;
+	internal class Gyanusított : Személy
+    {
 		private int gyanusitottsagszint;
 		private string statusz;
 
-		public Gyanusított(Személy person, int gyanusitottsagszint, string statusz)
-		{
-			Person = person;
+		public Gyanusított(string nev, int eletkor, string megjegyzes, int gyanusitottsagszint, string statusz)
+			: base(nev, eletkor, megjegyzes)
+        {
 			this.gyanusitottsagszint = gyanusitottsagszint;
 			this.statusz = statusz;
 		}
 
 		public int Gyanusitottsagszint { get => gyanusitottsagszint; set => gyanusitottsagszint = value; }
 		public string Statusz { get => statusz; set => statusz = value; }
-		internal Személy Person1 { get => Person; set => Person = value; }
 		public override string ToString()
 		{
-			return $"--- Gyanusított ---{this.Person}Gyanúsítottsági szint: {this.gyanusitottsagszint} Státusz: {this.statusz}";
+			return $"\n---Gyanusított---: "+base.ToString()+$"-Gyanúsítottsági szint-: {this.gyanusitottsagszint} -Státusz-: {this.statusz}";
 		}
 	}
 
